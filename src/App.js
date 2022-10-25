@@ -1,20 +1,16 @@
-import { useState } from "react";
-import data from "./data";
-import SingleQuestion from "./Question";
-
+import React, { useState } from 'react';
+import data from './data';
+import SingleQuestion from './Question';
 function App() {
   const [questions, setQuestions] = useState(data);
   return (
     <main>
-      <div className="App">
+      <div className='App'>
         <h3>Questions And Answers About Login</h3>
-        <section className="info">
-          {questions.map((questions) => {
+        <section className='info'>
+          {questions.map((question) => {
             return (
-              <SingleQuestion
-                key={questions.id}
-                {...questions}
-              ></SingleQuestion>
+              <SingleQuestion key={question.id} {...question}></SingleQuestion>
             );
           })}
         </section>
