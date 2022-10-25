@@ -72,10 +72,13 @@ main {
   margin-bottom: 1rem;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
+  font-size: 18px;
 }
 .question h4 {
   text-transform: none;
-  line-height: 1.5;
+  line-height: 1;
+  font-size: 18px;
+  word-spacing: .15rem;
 }
 .question p {
   color: var(grey);
@@ -97,6 +100,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-color: transparent;
   border-radius: 50%;
   cursor: pointer;
   margin-left: 1rem;
